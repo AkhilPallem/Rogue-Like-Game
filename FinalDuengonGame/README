@@ -1,0 +1,18 @@
+For assignment 10 I decided to do this option to extend the game:
+    Ranged combat. Add a command to select a target (cell or monster). A ranged weapon must be
+    wielded (bow, sling, holy hand grenade, etc.), and a second command will attack that target as long as
+    it remains valid. Also add a command to cast a poison ball spell. The spell centers on the target and
+    damages all monsters in a radius around it. Add whatever other fun and clever extensions to this idea
+    you like.
+
+From my change long these are the control added:
+r, P, and F
+
+HOW THE CONTROLS WORK 
+first hit lowercase (r): this works similar to targeting teleport as you then select the monster you want to lock on to 
+
+next, if you have a wooden bow equipped only (i added this into objects and is a curly yellow brace) you cane hit capital F(F) and it will fire the bow at the targeted monster and so damage. If you do not have the bow equipped it will display a message that you dont have a ranged weapon equipped and need to do that
+
+after targeting a monster with r you could also use control capital P (P) which will erupt a ball at the coordinates it will display and harm the monster you have targeted and the ones surronding it for the same damage. If you try to cast P without a monster selected or so on it will also tell you that no monster is selected and wont run it yet.
+
+This assignment implemntes ranged attack and targetting monsters with a bow and posion ball but you must have a monster selected and a bow equipped when trying to do some attacks

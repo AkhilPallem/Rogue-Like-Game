@@ -1,0 +1,70 @@
+HOW THE NEW CONTROLS WORK IS AT THE BOTTOM OF THIS
+
+April 26th 4:05 pm:
+Opened code and made sure i was able to run it 
+
+April 28th
+Picked option 1 for what to do to add something on. Started working on ranged attack.
+
+9:52pm:
+I made the controls in io.cpp to where spell and targeting working. Im having trouble adding a long ranged item to attach tho. I will hopeully finish this tmr 
+
+April 29th 10:00am:
+I struggled a lot with getting a ranged object to parse but when I went into nano and saved it it finally worked and appeared on my dungeon. I added a bow that is curly and yellow that displays and does damage based on my r key
+
+April 30th:
+I was due date was exteded a week so I am gonna finish this tmr and submit on May 1st
+
+May 1st 12:46 pm:
+Made changes to my controls and edge cases for my targeting functions. I have to change my targetting as it wasnt looking for cases where it wasnt able to select a monster so it was selecting random space but i fixed that in select target but this finally got it to all work and do damage. I ran into a lot of trouble getting the bow to parse but I think it was just cause i was not parsing or saving it properly in the file so I did it in nano and it finally worked. I went back and deleted my debug statements in descriptions.cpp to check what was parsing
+It looked like this to see what was working: bash-5.2$ ./rlg327
+Read NAME: a NERF(R) dagger
+Parsed object: a NERF(R) dagger
+Read NAME: the Vorpal Blade
+Parsed object: the Vorpal Blade
+Read NAME: a prom dress
+Parsed object: a prom dress
+Read NAME: a pair of Prada dress sandals
+Parsed object: a pair of Prada dress sandals
+Read NAME: a chainmail coif
+Parsed object: a chainmail coif
+Read NAME: the Aegis
+Parsed object: the Aegis
+Read NAME: the cloak of invisibility
+Parsed object: the cloak of invisibility
+Read NAME: the One Ring
+Parsed object: the One Ring
+Read NAME: a torch
+Parsed object: a torch
+Read NAME: a Wicked Lasers(R) Torch
+Parsed object: a Wicked Lasers(R) Torch
+Read NAME: the Moon Tiara
+Parsed object: the Moon Tiara
+Read NAME: the Moon Stick
+Parsed object: the Moon Stick
+Read NAME: a ring of speed
+Parsed object: a ring of speed
+Read NAME: a ring of damage
+Parsed object: a ring of damage
+Read NAME: Mjolnir
+Parsed object: Mjolnir
+Read NAME: Sting
+Parsed object: Sting
+Read NAME: fingerless gloves
+Parsed object: fingerless gloves
+Read NAME: the Heart of the Ocean
+Parsed object: the Heart of the Ocean
+Read NAME: a wooden bow
+Parsed object: a wooden bow
+
+HOW THE CONTROLS WORK 
+first hit lowercase (r): this works similar to targeting teleport as you then select the monster you want to lock on to 
+
+next, if you have a wooden bow equipped only (i added this into objects and is a curly yellow brace) you cane hit capital F(F) and it will fire the bow at the targeted monster and so damage. If you do not have the bow equipped it will display a message that you dont have a ranged weapon equipped and need to do that
+
+after targeting a monster with r you could also use control capital P (P) which will erupt a ball at the coordinates it will display and harm the monster you have targeted and the ones surronding it for the same damage. If you try to cast P without a monster selected or so on it will also tell you that no monster is selected and wont run it yet.
+
+Commands used:
+./rlg327 
+make clean 
+make
